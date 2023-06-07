@@ -1,0 +1,1030 @@
+<!doctype html>
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Java 如何使用com.sun.net.httpserver.HttpsServer要求客户端证书_Java_Ssl_Https - 多多扣</title>
+				<meta name="keywords" content="Java 如何使用com.sun.net.httpserver.HttpsServer要求客户端证书,java,ssl,https,Java,Ssl,Https" />
+				<meta name="description" content="Java 如何使用com.sun.net.httpserver.HttpsServer要求客户端证书,java,ssl,https,Java,Ssl,Https" />
+				                <link rel='stylesheet' id='bootstrap-css-css' href='/static/css/bootstrap.css?ver=1.0' type='text/css' media='all'>
+                <link rel='stylesheet' id='responsive-css-css' href='/static/css/responsive.css?ver=1.0' type='text/css' media='all'>
+                <link rel='stylesheet' id='main-css-css' href='/static/css/main.css?ver=1.0' type='text/css' media='all'>
+
+				<script data-ad-client="ca-pub-8601548872303917" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+
+
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?27af83d7d87b4dec64db66dd06698f17";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+
+        </head>
+
+        <body>
+                <div class="header-wrapper">
+                        <header>
+                                <div class="container">
+                                        <div class="logo-container">
+                                                <span class="tag-line">多多扣</span>
+                                        </div>
+										<!-- Start of Main Navigation -->
+                                        <nav class="main-nav">
+                                                <div class="menu-top-menu-container">
+                                                        <ul id="menu-top-menu" class="clearfix">
+                                                                <li class="current-menu-item"><a href="/">首页</a></li>
+          <li><a href="/frontend/" target="_blank">前端</a></li>
+          <li><a href="/backend/" target="_blank">后端</a></li>
+          <li><a href="/bigdata/" target="_blank">大数据</a></li>
+          <li><a href="/client/" target="_blank">客户端</a></li>
+          <li><a href="/tools/" target="_blank">工具</a></li>
+          <li><a href="/os/" target="_blank">操作系统</a></li>
+          <li><a href="/database/" target="_blank">数据库</a></li>
+          <li><a href="/server/" target="_blank">服务器</a></li>
+          <li><a href="/framework/" target="_blank">框架</a></li>
+          <li><a href="/middleware/" target="_blank">中间件</a></li>
+          <li><a href="/cloud/" target="_blank">云服务</a></li>
+          <li><a href="/other/" target="_blank">其他</a></li>
+          <li><a href="/testing/" target="_blank">测试</a></li>
+          <li><a href="/program/" target="_blank">编程</a></li>
+                                                                <li><a href="/tags.php">分类</a></li>
+                                                        </ul>
+                                                </div>
+                                        </nav>
+                                        <!-- End of Main Navigation -->
+                                </div>
+                        </header>
+
+<center>
+</center>                </div>
+                <!-- End of Header -->
+                <!-- Start of Page Container -->
+                <div class="page-container">
+                        <div class="container">
+                                <div class="row">
+
+                                        <!-- start of page content -->
+                                        <div class="span8 page-content">
+                                                <ul class="breadcrumb">
+                                                        <li><a href="/java/" target="_blank">java</a><span class="divider">/</span></li>                                                        <li class="active ">Java 如何使用com.sun.net.httpserver.HttpsServer要求客户端证书</li>
+                                                </ul>
+                                                <article class=" type-post format-standard hentry clearfix"  style="border:1px solid #e9e6c4;padding:10px;">
+                                                        <p class="info post-title" style="padding:10px 20px 10px 5px;">Java 如何使用com.sun.net.httpserver.HttpsServer要求客户端证书</p>
+                                                        <div class="post-meta clearfix">
+     <span class="category"><a href="/java/"  target="_blank">java</a></span>
+     <span class="category"><a href="/ssl/"  target="_blank">ssl</a></span>
+     <span class="category"><a href="/https/"  target="_blank">https</a></span>
+                                                        </div><!-- end of post meta -->
+                                                        <blockquote>
+                                                                <p>Java 如何使用com.sun.net.httpserver.HttpsServer要求客户端证书,java,ssl,https,Java,Ssl,Https,我想要求使用基于Java1.7内置的服务器进行客户端证书身份验证
+我似乎找不到任何方法使服务器无法通过身份验证。它将愉快地向任何老客户提供数据，无论其客户证书是可信的、未知的还是完全不存在的
+我对文档的阅读表明，当客户端不可信时，应该会导致身份验证失败。我发现有类似问题的人的笔记，各种各样地建议在SSLEngine和SSLParameters中使用相同的标志，但这两种方法都没有改变我的行为
+这是我能够创建的最简单的示例。查看事务的实质（使用Wireshark或-Djavax.net.debug=</p>
+                                                        </blockquote>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8601548872303917"
+     crossorigin="anonymous"></script>
+<!-- 336x280blue -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-8601548872303917"
+     data-ad-slot="7682543783"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+														我想要求使用基于Java1.7内置的服务器进行客户端证书身份验证</p>
+我似乎找不到任何方法使服务器无法通过身份验证。它将愉快地向任何老客户提供数据，无论其客户证书是可信的、未知的还是完全不存在的</p>
+我对文档的阅读表明，当客户端不可信时，应该会导致身份验证失败。我发现有类似问题的人的笔记，各种各样地建议在SSLEngine和SSLParameters中使用相同的标志，但这两种方法都没有改变我的行为</p>
+这是我能够创建的最简单的示例。查看事务的实质（使用Wireshark或-Djavax.net.debug=all），我看不到任何明显类似于服务器的证书请求的内容。。。当然，这似乎很明显，因为它在不应该的时候做出了反应</p>
+我对Java和SSL都比较陌生。我是否误解了认证过程？我是否在适当的图书馆使用？我是否忽略了解决此问题的好方法？谢谢</p>
+编辑1：更新示例代码以正确分隔客户端密钥库和信任库。还重新编写了问题，以使身份验证问题更清楚</p>
+<pre><code>package authserv;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.URL;
+import java.security.KeyStore;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.KeyManager;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLParameters;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManagerFactory;
+
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpsConfigurator;
+import com.sun.net.httpserver.HttpsExchange;
+import com.sun.net.httpserver.HttpsParameters;
+import com.sun.net.httpserver.HttpsServer;
+
+public class AuthServer {
+    final static String SERVER_PWD = "aaaaaa";
+    final static String KST_SERVER = "keys/server.jks";
+    final static String TST_SERVER = "keys/servertrust.jks";
+
+    public static HttpsServer server; 
+
+    public static void main(String[] args) throws Exception {
+        server = makeServer();
+        server.start();
+        //System.out.println("Server running, hit enter to stop.\n"); System.in.read();
+
+        AuthClient cl = new AuthClient(); 
+        cl.testIt();
+
+        server.stop(0);
+    }
+
+    public static HttpsServer makeServer() throws Exception {
+        server = HttpsServer.create(new InetSocketAddress(8888), 0);
+
+        //server.setHttpsConfigurator(new HttpsConfigurator(SSLContext.getInstance("TLS"))); // Default config with no auth requirement.
+        SSLContext sslCon = createSSLContext();
+        MyConfigger authconf = new MyConfigger(sslCon);
+        server.setHttpsConfigurator(authconf);
+
+        server.createContext("/auth", new HelloHandler());
+        return server;
+    }
+    private static SSLContext createSSLContext()  {
+        SSLContext sslContext = null;
+        KeyStore ks;
+        KeyStore ts;
+
+        try{
+            sslContext = SSLContext.getInstance("TLS");
+
+            ks = KeyStore.getInstance("JKS");
+            ks.load(new FileInputStream(KST_SERVER), SERVER_PWD.toCharArray());
+            KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+            kmf.init(ks, SERVER_PWD.toCharArray());
+
+            ts = KeyStore.getInstance("JKS");
+            ts.load(new FileInputStream(TST_SERVER), SERVER_PWD.toCharArray());
+            TrustManagerFactory tmf = TrustManagerFactory.getInstance("SunX509");
+            tmf.init(ts);
+
+            sslContext.init(kmf.getKeyManagers(), tmf.getTrustManagers(), null);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }       
+        return sslContext;
+    }
+}
+
+class MyConfigger extends HttpsConfigurator {
+    public MyConfigger(SSLContext sslContext) {
+        super(sslContext);  }
+
+    @Override
+    public  void configure(HttpsParameters params) {
+        SSLContext sslContext = getSSLContext();
+        SSLParameters  sslParams = sslContext.getDefaultSSLParameters();
+        sslParams.setNeedClientAuth(true); 
+        params.setNeedClientAuth(true);  
+        params.setSSLParameters(sslParams);
+        super.configure(params);
+    /* Other configure options that don't seem to help:
+        SSLEngine engine = sslContext.createSSLEngine ();
+        engine.setNeedClientAuth(true);
+        params.setCipherSuites ( engine.getEnabledCipherSuites () );
+        params.setProtocols ( engine.getEnabledProtocols () );  
+     */ 
+    }
+}
+
+class HelloHandler implements HttpHandler {
+    public void handle(HttpExchange t) throws IOException {
+        HttpsExchange ts = (HttpsExchange) t; 
+        SSLSession sess = ts.getSSLSession();
+        //if( sess.getPeerPrincipal() != null) System.out.println(sess.getPeerPrincipal().toString()); // Principal never populated.
+
+        t.getResponseHeaders().set("Content-Type", "text/plain");
+        t.sendResponseHeaders(200,0);
+        String response = "Hello!  You seem trustworthy!\n";
+        OutputStream os = t.getResponseBody();
+        os.write(response.getBytes());
+        os.close();
+    }
+}
+
+
+class AuthClient{
+    static String KEYSTORE = "";
+    static String TRUSTSTORE = "keys/clienttrust.jks";
+    static String CLIENT_PWD = "aaaaaa";
+
+    public static void main(String[] args) throws Exception {
+        KEYSTORE = "keys/unauthclient.jks"; // Doesn't exist in server trust store, should fail authentication.
+        //KEYSTORE = "keys/authclient.jks"; // Exists in server trust store, should pass authentication.
+
+        AuthClient cl = new AuthClient();
+        cl.testIt();
+    }
+
+    public void testIt(){
+        try {
+            String https_url = "https://localhost:8888/auth/";
+            URL url;
+            url = new URL(https_url);
+            HttpsURLConnection conn = (HttpsURLConnection)url.openConnection();
+            conn.setSSLSocketFactory(getSSLFactory());
+
+            conn.setRequestMethod("POST");
+            conn.setDoOutput(true);
+            conn.setUseCaches(false);
+
+            // Print response
+            BufferedReader bir = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String line = null;
+            while((line = bir.readLine()) != null) {
+                  System.out.println(line);
+                }
+            bir.close();
+            conn.disconnect();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static SSLSocketFactory getSSLFactory() throws Exception {
+        // Create key store
+        KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+        KeyManager[] kmfs = null;
+        if( KEYSTORE.length() &gt; 0 ) {
+            keyStore.load(new FileInputStream(KEYSTORE), CLIENT_PWD.toCharArray());
+            KeyManagerFactory kmf = KeyManagerFactory.getInstance(
+                        KeyManagerFactory.getDefaultAlgorithm());
+            kmf.init(keyStore, CLIENT_PWD.toCharArray());
+            kmfs = kmf.getKeyManagers();
+        }
+
+        // create trust store (validates the self-signed server!)
+        KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
+        trustStore.load(new FileInputStream(TRUSTSTORE), CLIENT_PWD.toCharArray());
+        TrustManagerFactory trustFactory = TrustManagerFactory.getInstance(
+                        TrustManagerFactory.getDefaultAlgorithm());
+        trustFactory.init(trustStore);
+
+        SSLContext sslContext = SSLContext.getInstance("TLS");
+        sslContext.init(kmfs, trustFactory.getTrustManagers(), null);
+        return sslContext.getSocketFactory();
+    }
+}
+</code></pre>
+下面是一个bash脚本，用于创建必要的证书和密钥库</p>
+<pre><code>#!/bin/bash
+LOCALNAME=localhost
+PASS=aaaaaa
+
+function main
+{
+    gen
+    list
+}
+
+function gen
+{
+mkdir -p keys
+rm -f authclient.cert authclient.jks server.cert server.jks servertrust.jks clienttrust.jks unauthclient.jks
+
+# create the keypairs for authclient, unauthclient and for server.
+keytool -genkey -alias server -keyalg RSA -keystore server.jks -validity 365 -dname "cn=$LOCALNAME, ou=Auth, o=Auth, c=CA" -storepass $PASS -keypass $PASS
+keytool -genkey -alias authclient -keyalg RSA -keystore authclient.jks -validity 365 -dname "cn=$LOCALNAME, ou=Auth, o=Auth, c=CA" -storepass $PASS -keypass $PASS
+keytool -genkey -alias unauthclient -keyalg RSA -keystore unauthclient.jks -validity 365 -dname "cn=$LOCALNAME, ou=Auth, o=Auth, c=CA" -storepass $PASS -keypass $PASS
+
+keytool -export -file server.cert -keystore server.jks -storepass $PASS -alias server
+keytool -export -file authclient.cert -keystore authclient.jks -storepass $PASS -alias authclient
+
+# Create a bare client truststore with no keypair
+echo yes | keytool -import -file server.cert -alias server -keystore clienttrust.jks -storepass $PASS 
+
+# Create a truststore for the server containing ONLY authclient
+echo yes | keytool -import -file authclient.cert -alias authclient -keystore servertrust.jks -storepass $PASS 
+
+# Add the server's cert to the client's keystores
+#echo yes | keytool -import -file server.cert -alias server -keystore authclient.jks -storepass $PASS 
+#echo yes | keytool -import -file server.cert -alias server -keystore unauthclient.jks -storepass $PASS 
+}
+
+function list { 
+for x in *.jks; do 
+    SER=$(keytool -list -v  -keystore $x -storepass aaaaaa  | grep Serial)
+    echo $x $SER
+done
+}
+main
+</code></pre>
+<hr />最后，出现了几个问题。
+-Gradle设置异常限定的JDK导致API权限问题
+-同样的JDK问题导致SSLPARAM出现问题
+-我最初的例子没有设置信任库</p>
+有趣的是，我最终改为wantClientAuth（true），并在处理程序中进行身份验证</p>
+<pre><code>package authserv;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.security.KeyStore;
+
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLParameters;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.TrustManagerFactory;
+
+import com.sun.net.httpserver.HttpExchange;
+import com.sun.net.httpserver.HttpHandler;
+import com.sun.net.httpserver.HttpsConfigurator;
+import com.sun.net.httpserver.HttpsExchange;
+import com.sun.net.httpserver.HttpsParameters;
+import com.sun.net.httpserver.HttpsServer;
+
+public class AuthServer {
+    final static String SERVER_PWD = "aaaaaa";
+    final static String KST_SERVER = "keys/server.jks";
+    final static String TST_SERVER = "keys/servertrust.jks";
+
+    public static HttpsServer server; 
+
+    public static void main(String[] args) throws Exception {
+        server = makeServer();
+        server.start();
+
+        System.out.println("Server running, hit enter to stop.\n"); System.in.read();
+        //AuthClient cl = new AuthClient(); cl.testIt(); 
+
+        server.stop(0);
+    }
+
+    public static HttpsServer makeServer() throws Exception {
+        server = HttpsServer.create(new InetSocketAddress(8888), 0);
+
+        //server.setHttpsConfigurator(new HttpsConfigurator(SSLContext.getInstance("TLS"))); // Default config with no auth requirement.
+        SSLContext sslCon = createSSLContext();
+        MyConfigger authconf = new MyConfigger(sslCon);
+        server.setHttpsConfigurator(authconf);
+
+        server.createContext("/auth", new HelloHandler());
+        return server;
+    }
+    private static SSLContext createSSLContext()  {
+        SSLContext sslContext = null;
+        KeyStore ks;
+        KeyStore ts;
+
+        try{
+            sslContext = SSLContext.getInstance("TLS");
+
+            ks = KeyStore.getInstance("JKS");
+            ks.load(new FileInputStream(KST_SERVER), SERVER_PWD.toCharArray());
+            KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+            kmf.init(ks, SERVER_PWD.toCharArray());
+
+            ts = KeyStore.getInstance("JKS");
+            ts.load(new FileInputStream(TST_SERVER), SERVER_PWD.toCharArray());
+            TrustManagerFactory tmf = TrustManagerFactory.getInstance("SunX509");
+            tmf.init(ts);
+
+            sslContext.init(kmf.getKeyManagers(), tmf.getTrustManagers(), null);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }       
+        return sslContext;
+    }
+}
+
+class MyConfigger extends HttpsConfigurator {
+    public MyConfigger(SSLContext sslContext) {
+        super(sslContext);  }
+
+    @Override
+    public  void configure(HttpsParameters params) {
+        SSLContext sslContext = getSSLContext();
+        SSLParameters  sslParams = sslContext.getDefaultSSLParameters();
+        sslParams.setNeedClientAuth(true); 
+        params.setNeedClientAuth(true);  
+        params.setSSLParameters(sslParams);
+    }
+}
+
+class HelloHandler implements HttpHandler {
+    public void handle(HttpExchange t) throws IOException {
+        HttpsExchange ts = (HttpsExchange) t; 
+        SSLSession sess = ts.getSSLSession();
+        //if( sess.getPeerPrincipal() != null) System.out.println(sess.getPeerPrincipal().toString()); // Principal never populated.
+        System.out.printf("Responding to host: %s\n",sess.getPeerHost());
+
+        t.getResponseHeaders().set("Content-Type", "text/plain");
+        t.sendResponseHeaders(200,0);
+        String response = "Hello!  You seem trustworthy!\n";
+        OutputStream os = t.getResponseBody();
+        os.write(response.getBytes());
+        os.close();
+    }
+}
+</code></pre>
+这里有一位客户向您展示了失败和成功：</p>
+<pre><code>package authserv;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.net.SocketException;
+import java.net.URL;
+import java.security.KeyStore;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.KeyManager;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManagerFactory;
+
+public class AuthClient{
+    static String NO_KEYSTORE = "";
+    static String UNAUTH_KEYSTORE = "keys/unauthclient.jks"; // Doesn't exist in server trust store, should fail authentication.
+    static String AUTH_KEYSTORE = "keys/authclient.jks"; // Exists in server trust store, should pass authentication.
+    static String TRUSTSTORE = "keys/clienttrust.jks";
+    static String CLIENT_PWD = "aaaaaa";
+
+    public static void main(String[] args) throws Exception {
+
+        AuthClient cl = new AuthClient();
+        System.out.println("No keystore:");
+        cl.testIt(NO_KEYSTORE);
+        System.out.println("Unauth keystore:");
+        cl.testIt(UNAUTH_KEYSTORE);
+        System.out.println("Auth keystore:");
+        cl.testIt(AUTH_KEYSTORE);
+    }
+
+    public void testIt(String jksFile){
+        try {
+            String https_url = "https://localhost:8888/auth/";
+            URL url;
+            url = new URL(https_url);
+            HttpsURLConnection conn = (HttpsURLConnection)url.openConnection();
+            conn.setSSLSocketFactory(getSSLFactory(jksFile));
+
+            conn.setRequestMethod("POST");
+            conn.setDoOutput(true);
+            conn.setUseCaches(false);
+
+            // Print response
+            BufferedReader bir = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String line = null;
+            while((line = bir.readLine()) != null) {
+                  System.out.println(line);
+                }
+            bir.close();
+            conn.disconnect();
+        } catch (SSLHandshakeException|SocketException e) {
+            System.out.println(e.getMessage());
+            System.out.println("");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static SSLSocketFactory getSSLFactory(String jksFile) throws Exception {
+        // Create key store
+        KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+        KeyManager[] kmfs = null;
+        if( jksFile.length() &gt; 0 ) {
+            keyStore.load(new FileInputStream(jksFile), CLIENT_PWD.toCharArray());
+            KeyManagerFactory kmf = KeyManagerFactory.getInstance(
+                        KeyManagerFactory.getDefaultAlgorithm());
+            kmf.init(keyStore, CLIENT_PWD.toCharArray());
+            kmfs = kmf.getKeyManagers();
+        }
+
+        // create trust store (validates the self-signed server!)
+        KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
+        trustStore.load(new FileInputStream(TRUSTSTORE), CLIENT_PWD.toCharArray());
+        TrustManagerFactory trustFactory = TrustManagerFactory.getInstance(
+                        TrustManagerFactory.getDefaultAlgorithm());
+        trustFactory.init(trustStore);
+
+        SSLContext sslContext = SSLContext.getInstance("TLS");
+        sslContext.init(kmfs, trustFactory.getTrustManagers(), null);
+        return sslContext.getSocketFactory();
+    }
+}
+</code></pre>
+<hr />您的客户端没有使用配置的密钥存储运行，因此无论是否要求它发送证书，它都无法发送证书。使用“unauthclient.jks”（具有无法识别的客户端证书的正确密钥库）运行客户端具有完全相同的行为。但在任何情况下，服务器都应该拒绝来自无法进行身份验证的客户端的连接？您正在使用信任存储而不是密钥存储运行客户端。它无法从中获取私钥或相应的证书。配置错误的客户端无法满足服务器对身份验证证书的要求。所以服务器关闭了连接。现在您正在创建一个TrustManager，并将null而不是它传递给SSLContext.init（）。摆弄码头并不能解决这个问题。这只是浪费时间。您是如何实现WantClientAuth的？我总是收到无法验证SSL密钥的错误。。。														                                                </article>
+<hr />
+<ul class="tabs-nav">
+<li class="active" style=""><a href="/ssl/" target="_blank">[ssl]相关文章推荐</a></li>
+</ul>
+
+
+                                                        <ul class="articles quick-links-widget">
+<li class="article-entry standard"><a target="_blank" href="/ssl/26385773321074141074.html">在SSL连接中禁用弱密码</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/cryptography/" target="_blank" title="cryptography" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">cryptography</a><a href="/openssl/" target="_blank" title="openssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">openssl</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/40763121441185607847.html">Ssl 企业社会责任是独一无二的吗？</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/https/" target="_blank" title="https" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">https</a><a href="/e-commerce/" target="_blank" title="e-commerce" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">e-commerce</a><a href="/openssl/" target="_blank" title="openssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">openssl</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/50826377329107295031.html">Ssl 了解IBMCMS密钥库</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/content-management-system/" target="_blank" title="content-management-system" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">content-management-system</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/16397815266411010886.html">解析SSL证书问题</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/parse-platform/" target="_blank" title="parse-platform" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">parse-platform</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/26399325222747613083.html">Ssl 在tls_rsa_与_aes_256_cbc_sha和tls_rsa_与_aes_128_cbc_sha256之间，哪个更安全？</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/encryption/" target="_blank" title="encryption" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">encryption</a><a href="/openssl/" target="_blank" title="openssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">openssl</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/50846363957261613974.html">Ssl 自签名证书在GlassFish服务器4.0上不起作用</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/glassfish/" target="_blank" title="glassfish" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">glassfish</a><a href="/certificate/" target="_blank" title="certificate" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">certificate</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/66080633661036694690.html">Ssl Neo4J力传感器</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/https/" target="_blank" title="https" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">https</a><a href="/neo4j/" target="_blank" title="neo4j" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">neo4j</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/36631080336180425208.html">Ssl CA&#x27中RDN属性的排序；s认证签署流程</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/certificate/" target="_blank" title="certificate" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">certificate</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/16390832452701210862.html">我的网站有SSL证书，但浏览器仍然说连接不&#x27；不安全</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/https/" target="_blank" title="https" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">https</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/50856358223455335904.html">Ssl nginx-浏览器可以&#x27；不要停止指向https？</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/nginx/" target="_blank" title="nginx" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">nginx</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/26323164477086752085.html">Ssl 使用Let&#x27；s使用Nginx&#x27处理的子域进行加密；s通配符</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/nginx/" target="_blank" title="nginx" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">nginx</a><a href="/https/" target="_blank" title="https" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">https</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/26345396428144888085.html">Ssl GnuTLS无法正确验证googleapis.com的证书</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/16308307437622100807.html">libtorrent ssl需要证书（可能）（Windows）</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/openssl/" target="_blank" title="openssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">openssl</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/16317770567131310817.html">Ssl URL重写强制为https，一个域除外</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/https/" target="_blank" title="https" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">https</a><a href="/url-rewriting/" target="_blank" title="url-rewriting" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">url-rewriting</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/26319780586685868089.html">Ssl 使用通配符LetsEncrypt证书时，NGINX将子域重定向到根域的文档根</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/nginx/" target="_blank" title="nginx" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">nginx</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/50866316626533942847.html">Ssl 这是有效的集Cookie语法吗</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/cookies/" target="_blank" title="cookies" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">cookies</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/26317012676371015084.html">在GKE上创建SSL web服务的困难</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/kubernetes/" target="_blank" title="kubernetes" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">kubernetes</a><a href="/https/" target="_blank" title="https" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">https</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/40863604666937349783.html">多个站点和多个SSL证书的IIS10 SSL配置</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/iis/" target="_blank" title="iis" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">iis</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/40863885576279169593.html">Ssl 将自签名证书从代理安全websocket发送到安全websocket连接（wss）</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/websocket/" target="_blank" title="websocket" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">websocket</a><a href="/proxy/" target="_blank" title="proxy" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">proxy</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/ssl/36631247769458748108.html">赫罗库的变化。如何在免费Heroku dynos上继续使用免费Cloudflare SSL？</a>
+<span class="article-meta"><a href="/ssl/" target="_blank" title="ssl" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ssl</a><a href="/heroku/" target="_blank" title="heroku" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">heroku</a></span> </li>
+                                       </ul>
+
+
+
+<hr />
+<ul class="tabs-nav">
+<li class="active" style=""><a href="javascript:void(0);" target="_blank">随机文章推荐</a></li>
+</ul>
+
+
+                                                        <ul class="articles quick-links-widget">
+<li class="article-entry standard"><a target="_blank" href="/dictionary/21657974191373136084.html">Dictionary 对于列表1中的唯一项，在python中获取列表2中相应的最大值</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/11696277169856250879.html">Solr：从单词Dictionary在正文上自动链接</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/solr/"  target="_blank" title="solr" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">solr</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/40816125881072994198.html">Dictionary .dic行格式定义</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/formatting/"  target="_blank" title="formatting" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">formatting</a><a href="/sublimetext2/"  target="_blank" title="sublimetext2" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">sublimetext2</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/11638567253754780823.html">Dictionary 映射逻辑单元</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/11601899279656090879.html">Dictionary 将带有模式的Clojure映射条目提取到映射列表中？</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/clojure/"  target="_blank" title="clojure" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">clojure</a><a href="/functional-programming/"  target="_blank" title="functional-programming" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">functional-programming</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/40816983113374394842.html">Dictionary 谷歌地图api和苹果MKMapKit中的位置不同</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/ios8/"  target="_blank" title="ios8" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ios8</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/21685455301440324088.html">Dictionary 在dynamodb中更新字典的成本？</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/amazon-dynamodb/"  target="_blank" title="amazon-dynamodb" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">amazon-dynamodb</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/11661656309553860809.html">Dictionary 用TreeMap替换HashMap</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/36162714833270604908.html">为什么不&#x27；词典&燃气轮机；与派生类型兼容的键？
+TypeA（）=类结束
+类型TypeB（）=继承类型a（）
+//“类型'TypeA'与类型'TypeB'不匹配：”
+让iDict:IDictionary=[TypeB（），true；TypeB（），false]|>dict
+设d=字典（）
+//不过，这没关系：
+d、 添加（TypeB（），false）</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/fsharp/"  target="_blank" title="f#" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">f#</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/62082163047242789977.html">Dictionary if-else内为循环查询多个字典</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/for-loop/"  target="_blank" title="for-loop" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">for-loop</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/21603466407146286089.html">Dictionary F#来自列表/序列的字典生成器</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/fsharp/"  target="_blank" title="f#" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">f#</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/33160836944708676208.html">Dictionary 在结构中初始化嵌套映射</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/go/"  target="_blank" title="go" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">go</a><a href="/struct/"  target="_blank" title="struct" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">struct</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/50801675802585304386.html">Dictionary 按键获取字典中的列表项</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/61080169955351949596.html">Dictionary 脚本字典ASP经典</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/vbscript/"  target="_blank" title="vbscript" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">vbscript</a><a href="/asp-classic/"  target="_blank" title="asp-classic" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">asp-classic</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/21689238521982172083.html">Dictionary 列表视图SwiftUI的字典数组</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/swiftui/"  target="_blank" title="swiftui" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">swiftui</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/65082167684855585070.html">Dictionary Ansible-如何比较两个键相同的词典</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/ansible/"  target="_blank" title="ansible" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ansible</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/40816886006034000890.html">Dictionary 将一个字典的值合并为另一个字典的键</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/merge/"  target="_blank" title="merge" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">merge</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/50831697086680842648.html">Dictionary Ansible-如何在嵌套字典中将列表组合为值</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a><a href="/ansible/"  target="_blank" title="ansible" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">ansible</a></span> </li>
+<li class="article-entry standard"><a target="_blank" href="/dictionary/50861627947635132948.html">Dictionary 谷歌地图没有&#x27；t显示公司标记</a>
+<span class="article-meta"><a href="/dictionary/"  target="_blank" title="dictionary" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">dictionary</a></span> </li>
+                                       </ul>
+
+                                        </div>
+                                        <!-- end of page content -->
+
+                                        <!-- start of sidebar -->
+                                        <aside class="span4 page-sidebar">
+
+<hr />
+                                                <section class="widget  quick-links-widget">
+                                                        <h3 class="title">[<a href="/java/" target="_blank">java</a>]相关推荐</h3>
+                                                        <ul class="articles">
+<li class="article-entry standard"><h4><a target="_blank" href="/java/16716392234579140874.html">Java hadoop-完成mapreduce作业后，我们可以检查状态多长时间？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/hadoop/" target="_blank" title="hadoop" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Hadoop</a>
+							 									<a href="/mapreduce/" target="_blank" title="mapreduce" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Mapreduce</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/40867039214320973704.html">Java最特定的方法子类型规则</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/69082675254149390086.html">Java 如何编译ADF和JSF UTIL并创建JAR文件？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/50846772402442490294.html">Java 如何使用JPA将实体属性注入另一组实体？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/hibernate/" target="_blank" title="hibernate" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Hibernate</a>
+							 									<a href="/jpa/" target="_blank" title="jpa" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Jpa</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/39677361249014818608.html">如何使用Tika parser/Java检测pdf是否为扫描文档</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/pdf/" target="_blank" title="pdf" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Pdf</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/61082676713241426328.html">Java 如何将ajax与android服务结合使用？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/android/" target="_blank" title="android" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Android</a>
+							 									<a href="/ajax/" target="_blank" title="ajax" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Ajax</a>
+							 									<a href="/cordova/" target="_blank" title="cordova" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Cordova</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/50886734652468314506.html">Java 问：Spring服务器如何避免衍生到服务器</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/spring/" target="_blank" title="spring" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring</a>
+							 									<a href="/hibernate/" target="_blank" title="hibernate" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Hibernate</a>
+							 									<a href="/spring-mvc/" target="_blank" title="spring-mvc" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring Mvc</a>
+							 									<a href="/server/" target="_blank" title="server" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Server</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/66088674060346018898.html">java中使用OOP的初学者如何获取平均值和标准偏差（）</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/62086677264342367072.html">Java 将扫描程序传递给方法以读取文件会引发nullpointerexception</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/34678065341133520708.html">Java 为什么我的TomCat8服务器会给我；404“资源不可用”；在一台笔记本电脑上，但它在我的另一台笔记本电脑上工作？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/64088674666344070416.html">Java Swing按钮时间延迟（闪烁）</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/swing/" target="_blank" title="swing" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Swing</a>
+							 									<a href="/colors/" target="_blank" title="colors" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Colors</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/68083674828348786087.html">在java process builder中使用文件选择器选择文件</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/37674838348322854408.html">Java 如何将Oracle SDO表转换为ESRI shp文件</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/oracle/" target="_blank" title="oracle" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Oracle</a>
+							 									<a href="/oracle11g/" target="_blank" title="oracle11g" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Oracle11g</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/16749793404284390854.html">Java JPA EntityManager未合并目标数据库中的实体</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/jpa/" target="_blank" title="jpa" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Jpa</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/32673620444645495808.html">使用数据库Java重新启动pi</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/16760914449271320809.html">Java 如何在Spring引导和@GetMapping中结束服务</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/spring/" target="_blank" title="spring" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring</a>
+							 									<a href="/spring-mvc/" target="_blank" title="spring-mvc" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring Mvc</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/50816753364440527279.html">“线程中的异常”；“主要”；javax.persistence.PersistenceException:没有名为databaseTest的EntityManager的持久性提供程序</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/eclipse/" target="_blank" title="eclipse" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Eclipse</a>
+							 									<a href="/oracle/" target="_blank" title="oracle" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Oracle</a>
+							 									<a href="/jpa/" target="_blank" title="jpa" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Jpa</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/50866780094474834752.html">Java线程卡在Wildfly 10.1上，占用100%的CPU（10核）</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/jboss/" target="_blank" title="jboss" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Jboss</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/26721035494440815085.html">Java 可以将数据从Redis提取到excel吗</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/caching/" target="_blank" title="caching" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Caching</a>
+							 									<a href="/redis/" target="_blank" title="redis" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Redis</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/68087671320648487455.html">Java 通过SpringSecurityOAuth2保护JAX-RS（Jersey）RESTAPI？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/spring-boot/" target="_blank" title="spring-boot" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring Boot</a>
+							 									<a href="/jersey/" target="_blank" title="jersey" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Jersey</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/34677290743856146108.html">Java LibGDX：向现有三维模型添加新动画</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/animation/" target="_blank" title="animation" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Animation</a>
+							 									<a href="/3d/" target="_blank" title="3d" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">3d</a>
+							 									<a href="/libgdx/" target="_blank" title="libgdx" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Libgdx</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/67089679499747039523.html">Java嵌套队列</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/multithreading/" target="_blank" title="multithreading" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Multithreading</a>
+							 									<a href="/concurrency/" target="_blank" title="concurrency" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Concurrency</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/33670505055879840608.html">Java Spring数据JPA Rest的安全问题（JpaRepository）</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/spring/" target="_blank" title="spring" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring</a>
+							 									<a href="/spring-boot/" target="_blank" title="spring-boot" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring Boot</a>
+							 									<a href="/spring-security/" target="_blank" title="spring-security" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring Security</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/50856776312529798470.html">使用java打开文件或将其放在前台</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/26706942510471848089.html">Java 如何控制是否应基于活动配置文件使用Spring Boot序列化字段</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/spring/" target="_blank" title="spring" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring</a>
+							 									<a href="/spring-boot/" target="_blank" title="spring-boot" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Spring Boot</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/34670351459155423708.html">Java 无法执行语句；SQL[n/a]；约束[主要]；嵌套异常是org.hibernate.exception.ConstraintViolationException</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/mysql/" target="_blank" title="mysql" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Mysql</a>
+							 									<a href="/api/" target="_blank" title="api" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Api</a>
+							 									<a href="/mariadb/" target="_blank" title="mariadb" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Mariadb</a>
+							 									<a href="/postman/" target="_blank" title="postman" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Postman</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/63084679244453576281.html">在java中，如何逐消息部分读取protobuf文件？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/protocol-buffers/" target="_blank" title="protocol-buffers" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Protocol Buffers</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/69085670314269465477.html">&引用；javax.ws.rs.NotFoundException:HTTP404NotFound&quot；请求后发生的</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/40867409146750947297.html">Java 在Netty世界中，与.setSSLHostnameVerifier（NoopHostnameVerifier.INSTANCE）等价的是什么？</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/netty/" target="_blank" title="netty" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Netty</a>
+							 </span></li>
+<li class="article-entry standard"><h4><a target="_blank" href="/java/40867716066204927406.html">Java TestNG-“测试”；无法分析套件&quot；尝试运行XML文件时出错</a></h4>
+<span class="article-meta">									<a href="/java/" target="_blank" title="java" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Java</a>
+							 									<a href="/intellij-idea/" target="_blank" title="intellij-idea" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Intellij Idea</a>
+							 									<a href="/testng/" target="_blank" title="testng" style="border:1px solid #f2f2f2; padding: 3px 5px 3px 20px;">Testng</a>
+							 </span></li>
+                                                        </ul>
+                                                </section>
+
+                                                <section class="widget  quick-links-widget">
+                                                        <h3 class="title">Tags</h3>
+                                                        <div class="tagcloud">
+<a  class="btn btn-mini" href="/user-interface/" target="_blank">User Interface</a>
+<a  class="btn btn-mini" href="/list/" target="_blank">List</a>
+<a  class="btn btn-mini" href="/swift3/" target="_blank">Swift3</a>
+<a  class="btn btn-mini" href="/angularjs/" target="_blank">Angularjs</a>
+<a  class="btn btn-mini" href="/msbuild/" target="_blank">Msbuild</a>
+<a  class="btn btn-mini" href="/zend-framework2/" target="_blank">Zend Framework2</a>
+<a  class="btn btn-mini" href="/sequelize.js/" target="_blank">Sequelize.js</a>
+<a  class="btn btn-mini" href="/tableau-api/" target="_blank">Tableau Api</a>
+<a  class="btn btn-mini" href="/plot/" target="_blank">Plot</a>
+<a  class="btn btn-mini" href="/datatables/" target="_blank">Datatables</a>
+<a  class="btn btn-mini" href="/sonarqube/" target="_blank">Sonarqube</a>
+<a  class="btn btn-mini" href="/gnuplot/" target="_blank">Gnuplot</a>
+<a  class="btn btn-mini" href="/javafx-2/" target="_blank">Javafx 2</a>
+<a  class="btn btn-mini" href="/validation/" target="_blank">Validation</a>
+<a  class="btn btn-mini" href="/usb/" target="_blank">Usb</a>
+<a  class="btn btn-mini" href="/rss/" target="_blank">Rss</a>
+<a  class="btn btn-mini" href="/editor/" target="_blank">Editor</a>
+<a  class="btn btn-mini" href="/pip/" target="_blank">Pip</a>
+<a  class="btn btn-mini" href="/parsing/" target="_blank">Parsing</a>
+<a  class="btn btn-mini" href="/ipad/" target="_blank">Ipad</a>
+<a  class="btn btn-mini" href="/encryption/" target="_blank">Encryption</a>
+<a  class="btn btn-mini" href="/graphviz/" target="_blank">Graphviz</a>
+<a  class="btn btn-mini" href="/pentaho/" target="_blank">Pentaho</a>
+<a  class="btn btn-mini" href="/parameters/" target="_blank">Parameters</a>
+<a  class="btn btn-mini" href="/gdb/" target="_blank">Gdb</a>
+<a  class="btn btn-mini" href="/django-models/" target="_blank">Django Models</a>
+<a  class="btn btn-mini" href="/ajax/" target="_blank">Ajax</a>
+<a  class="btn btn-mini" href="/python/" target="_blank">Python</a>
+<a  class="btn btn-mini" href="/nhibernate/" target="_blank">Nhibernate</a>
+<a  class="btn btn-mini" href="/web-services/" target="_blank">Web Services</a>
+<a  class="btn btn-mini" href="/opengl/" target="_blank">Opengl</a>
+<a  class="btn btn-mini" href="/telerik/" target="_blank">Telerik</a>
+<a  class="btn btn-mini" href="/airflow/" target="_blank">Airflow</a>
+<a  class="btn btn-mini" href="/oauth-2.0/" target="_blank">Oauth 2.0</a>
+<a  class="btn btn-mini" href="/asp-classic/" target="_blank">Asp Classic</a>
+<a  class="btn btn-mini" href="/tkinter/" target="_blank">Tkinter</a>
+<a  class="btn btn-mini" href="/streaming/" target="_blank">Streaming</a>
+<a  class="btn btn-mini" href="/gradle/" target="_blank">Gradle</a>
+<a  class="btn btn-mini" href="/polymer/" target="_blank">Polymer</a>
+<a  class="btn btn-mini" href="/concurrency/" target="_blank">Concurrency</a>
+<a  class="btn btn-mini" href="/neural-network/" target="_blank">Neural Network</a>
+<a  class="btn btn-mini" href="/file-io/" target="_blank">File Io</a>
+<a  class="btn btn-mini" href="/prolog/" target="_blank">Prolog</a>
+<a  class="btn btn-mini" href="/vuejs2/" target="_blank">Vuejs2</a>
+<a  class="btn btn-mini" href="/jakarta-ee/" target="_blank">Jakarta Ee</a>
+<a  class="btn btn-mini" href="/nativescript/" target="_blank">Nativescript</a>
+<a  class="btn btn-mini" href="/tomcat/" target="_blank">Tomcat</a>
+<a  class="btn btn-mini" href="/tridion/" target="_blank">Tridion</a>
+<a  class="btn btn-mini" href="/resharper/" target="_blank">Resharper</a>
+<a  class="btn btn-mini" href="/monitoring/" target="_blank">Monitoring</a>
+<a  class="btn btn-mini" href="/sml/" target="_blank">Sml</a>
+<a  class="btn btn-mini" href="/coq/" target="_blank">Coq</a>
+<a  class="btn btn-mini" href="/pytorch/" target="_blank">Pytorch</a>
+<a  class="btn btn-mini" href="/routes/" target="_blank">Routes</a>
+<a  class="btn btn-mini" href="/opencv/" target="_blank">Opencv</a>
+<a  class="btn btn-mini" href="/osgi/" target="_blank">Osgi</a>
+<a  class="btn btn-mini" href="/collections/" target="_blank">Collections</a>
+<a  class="btn btn-mini" href="/ssas/" target="_blank">Ssas</a>
+<a  class="btn btn-mini" href="/hazelcast/" target="_blank">Hazelcast</a>
+<a  class="btn btn-mini" href="/discord.py/" target="_blank">Discord.py</a>
+<a  class="btn btn-mini" href="/module/" target="_blank">Module</a>
+<a  class="btn btn-mini" href="/mpi/" target="_blank">Mpi</a>
+<a  class="btn btn-mini" href="/windows-phone-8.1/" target="_blank">Windows Phone 8.1</a>
+<a  class="btn btn-mini" href="/ruby-on-rails-3/" target="_blank">Ruby On Rails 3</a>
+<a  class="btn btn-mini" href="/yaml/" target="_blank">Yaml</a>
+<a  class="btn btn-mini" href="/ibm-mobilefirst/" target="_blank">Ibm Mobilefirst</a>
+<a  class="btn btn-mini" href="/google-drive-api/" target="_blank">Google Drive Api</a>
+<a  class="btn btn-mini" href="/struct/" target="_blank">Struct</a>
+<a  class="btn btn-mini" href="/gis/" target="_blank">Gis</a>
+<a  class="btn btn-mini" href="/indexing/" target="_blank">Indexing</a>
+<a  class="btn btn-mini" href="/docusignapi/" target="_blank">Docusignapi</a>
+<a  class="btn btn-mini" href="/actionscript-3/" target="_blank">Actionscript 3</a>
+<a  class="btn btn-mini" href="/3d/" target="_blank">3d</a>
+<a  class="btn btn-mini" href="/elm/" target="_blank">Elm</a>
+<a  class="btn btn-mini" href="/ravendb/" target="_blank">Ravendb</a>
+<a  class="btn btn-mini" href="/terraform/" target="_blank">Terraform</a>
+<a  class="btn btn-mini" href="/bison/" target="_blank">Bison</a>
+<a  class="btn btn-mini" href="/rx-java/" target="_blank">Rx Java</a>
+<a  class="btn btn-mini" href="/macros/" target="_blank">Macros</a>
+<a  class="btn btn-mini" href="/directory/" target="_blank">Directory</a>
+<a  class="btn btn-mini" href="/xmpp/" target="_blank">Xmpp</a>
+<a  class="btn btn-mini" href="/certificate/" target="_blank">Certificate</a>
+<a  class="btn btn-mini" href="/optimization/" target="_blank">Optimization</a>
+<a  class="btn btn-mini" href="/active-directory/" target="_blank">Active Directory</a>
+<a  class="btn btn-mini" href="/xpath/" target="_blank">Xpath</a>
+<a  class="btn btn-mini" href="/vb6/" target="_blank">Vb6</a>
+<a  class="btn btn-mini" href="/udp/" target="_blank">Udp</a>
+<a  class="btn btn-mini" href="/transactions/" target="_blank">Transactions</a>
+<a  class="btn btn-mini" href="/drop-down-menu/" target="_blank">Drop Down Menu</a>
+<a  class="btn btn-mini" href="/vba/" target="_blank">Vba</a>
+<a  class="btn btn-mini" href="/sql-server-2012/" target="_blank">Sql Server 2012</a>
+<a  class="btn btn-mini" href="/python-2.7/" target="_blank">Python 2.7</a>
+<a  class="btn btn-mini" href="/csharp/" target="_blank">C#</a>
+<a  class="btn btn-mini" href="/aws-lambda/" target="_blank">Aws Lambda</a>
+<a  class="btn btn-mini" href="/vbscript/" target="_blank">Vbscript</a>
+<a  class="btn btn-mini" href="/scroll/" target="_blank">Scroll</a>
+<a  class="btn btn-mini" href="/web/" target="_blank">Web</a>
+<a  class="btn btn-mini" href="/process/" target="_blank">Process</a>
+<a  class="btn btn-mini" href="/jira/" target="_blank">Jira</a>
+<a  class="btn btn-mini" href="/cmd/" target="_blank">Cmd</a>
+<a  class="btn btn-mini" href="/ip/" target="_blank">Ip</a>
+<a  class="btn btn-mini" href="/animation/" target="_blank">Animation</a>
+<a  class="btn btn-mini" href="/jwt/" target="_blank">Jwt</a>
+<a  class="btn btn-mini" href="/z3/" target="_blank">Z3</a>
+<a  class="btn btn-mini" href="/import/" target="_blank">Import</a>
+<a  class="btn btn-mini" href="/openid/" target="_blank">Openid</a>
+<a  class="btn btn-mini" href="/imagemagick/" target="_blank">Imagemagick</a>
+<a  class="btn btn-mini" href="/robotframework/" target="_blank">Robotframework</a>
+<a  class="btn btn-mini" href="/parse-platform/" target="_blank">Parse Platform</a>
+<a  class="btn btn-mini" href="/replace/" target="_blank">Replace</a>
+<a  class="btn btn-mini" href="/ocaml/" target="_blank">Ocaml</a>
+<a  class="btn btn-mini" href="/itext/" target="_blank">Itext</a>
+<a  class="btn btn-mini" href="/mono/" target="_blank">Mono</a>
+<a  class="btn btn-mini" href="/bootstrap-4/" target="_blank">Bootstrap 4</a>
+<a  class="btn btn-mini" href="/service/" target="_blank">Service</a>
+<a  class="btn btn-mini" href="/cordova/" target="_blank">Cordova</a>
+<a  class="btn btn-mini" href="/dialogflow-es/" target="_blank">Dialogflow Es</a>
+<a  class="btn btn-mini" href="/kendo-ui/" target="_blank">Kendo Ui</a>
+<a  class="btn btn-mini" href="/jboss/" target="_blank">Jboss</a>
+<a  class="btn btn-mini" href="/directx/" target="_blank">Directx</a>
+<a  class="btn btn-mini" href="/google-chrome/" target="_blank">Google Chrome</a>
+<a  class="btn btn-mini" href="/generics/" target="_blank">Generics</a>
+<a  class="btn btn-mini" href="/netty/" target="_blank">Netty</a>
+<a  class="btn btn-mini" href="/deployment/" target="_blank">Deployment</a>
+<a  class="btn btn-mini" href="/tensorflow/" target="_blank">Tensorflow</a>
+<a  class="btn btn-mini" href="/nosql/" target="_blank">Nosql</a>
+<a  class="btn btn-mini" href="/identityserver4/" target="_blank">Identityserver4</a>
+<a  class="btn btn-mini" href="/security/" target="_blank">Security</a>
+<a  class="btn btn-mini" href="/android/" target="_blank">Android</a>
+<a  class="btn btn-mini" href="/properties/" target="_blank">Properties</a>
+<a  class="btn btn-mini" href="/migration/" target="_blank">Migration</a>
+<a  class="btn btn-mini" href="/curl/" target="_blank">Curl</a>
+<a  class="btn btn-mini" href="/xpages/" target="_blank">Xpages</a>
+<a  class="btn btn-mini" href="/jsf-2/" target="_blank">Jsf 2</a>
+<a  class="btn btn-mini" href="/webview/" target="_blank">Webview</a>
+<a  class="btn btn-mini" href="/visual-studio-2015/" target="_blank">Visual Studio 2015</a>
+<a  class="btn btn-mini" href="/mdx/" target="_blank">Mdx</a>
+<a  class="btn btn-mini" href="/filter/" target="_blank">Filter</a>
+<a  class="btn btn-mini" href="/encoding/" target="_blank">Encoding</a>
+<a  class="btn btn-mini" href="/puppet/" target="_blank">Puppet</a>
+<a  class="btn btn-mini" href="/ionic-framework/" target="_blank">Ionic Framework</a>
+<a  class="btn btn-mini" href="/mqtt/" target="_blank">Mqtt</a>
+<a  class="btn btn-mini" href="/video/" target="_blank">Video</a>
+<a  class="btn btn-mini" href="/artifactory/" target="_blank">Artifactory</a>
+<a  class="btn btn-mini" href="/mfc/" target="_blank">Mfc</a>
+<a  class="btn btn-mini" href="/dictionary/" target="_blank">Dictionary</a>
+<a  class="btn btn-mini" href="/google-app-engine/" target="_blank">Google App Engine</a>
+<a  class="btn btn-mini" href="/computer-vision/" target="_blank">Computer Vision</a>
+<a  class="btn btn-mini" href="/dll/" target="_blank">Dll</a>
+<a  class="btn btn-mini" href="/dask/" target="_blank">Dask</a>
+<a  class="btn btn-mini" href="/cookies/" target="_blank">Cookies</a>
+<a  class="btn btn-mini" href="/scrapy/" target="_blank">Scrapy</a>
+<a  class="btn btn-mini" href="/dojo/" target="_blank">Dojo</a>
+<a  class="btn btn-mini" href="/common-lisp/" target="_blank">Common Lisp</a>
+<a  class="btn btn-mini" href="/web-crawler/" target="_blank">Web Crawler</a>
+<a  class="btn btn-mini" href="/titanium/" target="_blank">Titanium</a>
+<a  class="btn btn-mini" href="/azure-service-fabric/" target="_blank">Azure Service Fabric</a>
+<a  class="btn btn-mini" href="/shopify/" target="_blank">Shopify</a>
+<a  class="btn btn-mini" href="/backbone.js/" target="_blank">Backbone.js</a>
+<a  class="btn btn-mini" href="/javascript/" target="_blank">Javascript</a>
+<a  class="btn btn-mini" href="/svg/" target="_blank">Svg</a>
+<a  class="btn btn-mini" href="/android-fragments/" target="_blank">Android Fragments</a>
+<a  class="btn btn-mini" href="/session/" target="_blank">Session</a>
+<a  class="btn btn-mini" href="/macos/" target="_blank">Macos</a>
+<a  class="btn btn-mini" href="/wcf/" target="_blank">Wcf</a>
+<a  class="btn btn-mini" href="/dynamic/" target="_blank">Dynamic</a>
+<a  class="btn btn-mini" href="/bazel/" target="_blank">Bazel</a>
+<a  class="btn btn-mini" href="/asynchronous/" target="_blank">Asynchronous</a>
+<a  class="btn btn-mini" href="/json/" target="_blank">Json</a>
+<a  class="btn btn-mini" href="/xna/" target="_blank">Xna</a>
+<a  class="btn btn-mini" href="/processing/" target="_blank">Processing</a>
+<a  class="btn btn-mini" href="/ibm-mq/" target="_blank">Ibm Mq</a>
+<a  class="btn btn-mini" href="/adobe/" target="_blank">Adobe</a>
+<a  class="btn btn-mini" href="/maps/" target="_blank">Maps</a>
+<a  class="btn btn-mini" href="/gulp/" target="_blank">Gulp</a>
+<a  class="btn btn-mini" href="/winapi/" target="_blank">Winapi</a>
+<a  class="btn btn-mini" href="/twilio/" target="_blank">Twilio</a>
+<a  class="btn btn-mini" href="/antlr/" target="_blank">Antlr</a>
+<a  class="btn btn-mini" href="/akka/" target="_blank">Akka</a>
+<a  class="btn btn-mini" href="/teradata/" target="_blank">Teradata</a>
+<a  class="btn btn-mini" href="/csharp-3.0/" target="_blank">C# 3.0</a>
+<a  class="btn btn-mini" href="/hadoop/" target="_blank">Hadoop</a>
+<a  class="btn btn-mini" href="/mips/" target="_blank">Mips</a>
+<a  class="btn btn-mini" href="/chart.js/" target="_blank">Chart.js</a>
+<a  class="btn btn-mini" href="/plugins/" target="_blank">Plugins</a>
+<a  class="btn btn-mini" href="/scheme/" target="_blank">Scheme</a>
+<a  class="btn btn-mini" href="/autocomplete/" target="_blank">Autocomplete</a>
+<a  class="btn btn-mini" href="/d3.js/" target="_blank">D3.js</a>
+<a  class="btn btn-mini" href="/install4j/" target="_blank">Install4j</a>
+<a  class="btn btn-mini" href="/x86/" target="_blank">X86</a>
+<a  class="btn btn-mini" href="/openssl/" target="_blank">Openssl</a>
+<a  class="btn btn-mini" href="/marklogic/" target="_blank">Marklogic</a>
+<a  class="btn btn-mini" href="/jar/" target="_blank">Jar</a>
+<a  class="btn btn-mini" href="/synchronization/" target="_blank">Synchronization</a>
+<a  class="btn btn-mini" href="/redis/" target="_blank">Redis</a>
+<a  class="btn btn-mini" href="/reporting-services/" target="_blank">Reporting Services</a>
+<a  class="btn btn-mini" href="/stripe-payments/" target="_blank">Stripe Payments</a>
+<a  class="btn btn-mini" href="/android-layout/" target="_blank">Android Layout</a>
+<a  class="btn btn-mini" href="/office-js/" target="_blank">Office Js</a>
+<a  class="btn btn-mini" href="/sprite-kit/" target="_blank">Sprite Kit</a>
+<a  class="btn btn-mini" href="/xslt/" target="_blank">Xslt</a>
+                                                        </div>
+                                                </section>
+
+                                        </aside>
+                                        <!-- end of sidebar -->
+                                </div>
+                        </div>
+                </div>
+                <!-- End of Page Container -->
+
+                        
+						<!-- Footer Bottom -->
+                        <div id="footer-bottom-wrapper">
+                                <div id="footer-bottom" class="container">
+                                        <div class="row">
+                                                <div class="span6">
+                                                        <p class="copyright" style="color:#FFFFFF;">
+                                                                Copyright © 2023. All Rights Reserved by  - 多多扣                                                        </p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- End of Footer Bottom -->
+
+                </footer>
+                <!-- End of Footer -->
+
+
+
+
+        </body>
+</html>
